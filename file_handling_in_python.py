@@ -59,7 +59,7 @@
 
 
 
-# with open("C:\\Users\\Venugopal\\Downloads\\test.txt",'a') as file:
+# with open("test.txt",'a') as file:
 #     content = '''THIS IS NEW TEST CONTENT 
 #     THIS IS NEW TEST CONTENT 
 #     THIS IS NEW TEST CONTENT 
@@ -68,24 +68,47 @@
 
 #     file.write(content)
 
-#     file.truncate(10)
+    
 
 
 
 
-# with open("C:\\Users\\Venugopal\\Downloads\\test.txt", 'r+') as file :
-#     content= ''' \nHello this is read and write methods with'''
-#     # writee= file.write(content) 
-#     readd=file.read()
-#     print(readd)
-#     # print(writee)
+with open("test.txt", 'r+') as file :
+    content= ''' \nHello this is read and write methods with'''
+    # writee= file.write(content) 
+    readd=file.read()
+    print(readd)
+    # print(writee)
     
     
 
 
-with open("C:\Users\Venugopal\Downloads\test_binary.txt", 'rb+') as file:
-    Binary_content = "hello 1 5 4 "
+# # Corrected code for writing binary data to a file
+# with open("C:\\Users\\Venugopal\\Downloads\\test_binary.txt", 'rb+') as file:
+#     Binary_content = bytes([1,2,3,4,5])  # Proper binary data
 
-    writee = file.write()
+#     # file.write(Binary_content) 
+#     c=file.read()
+#     print(c)
+
+
+# with open("C:\\Users\\Venugopal\\Downloads\\test_binary.txt", 'rb+') as file:
+#     c = file.read()  # Read binary content from the file
+#     print(c)  # Print the raw binary content
+
+#     try:
+#         decoded_data = c.decode('utf-8')  # Attempt to decode assuming it's a UTF-8 encoded string
+#         print("Decoded data:", decoded_data)
+#     except UnicodeDecodeError:
+#         print("Data cannot be decoded as a string")
+
+
+
+
+
+    
+
+
+
 
 
